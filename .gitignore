@@ -1,0 +1,21 @@
+# IntelliJ / IDE specific
+.idea/
+*.iml
+out/
+gen/
+
+# Backend (Maven)
+target/
+*.log
+
+# Frontend (Node/React)
+notesbuff-frontend/node_modules/
+notesbuff-frontend/dist/
+notesbuff-frontend/.env.local
+notesbuff-frontend/.env.development.local
+notesbuff-frontend/.env.test.local
+notesbuff-frontend/.env.production.local
+
+# OS specific
+.DS_Store
+Thumbs.db
