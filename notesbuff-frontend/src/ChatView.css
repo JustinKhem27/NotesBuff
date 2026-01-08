@@ -1,0 +1,77 @@
+.chat-view {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  max-width: 800px; /* Increased width to accommodate two dropzones */
+  width: 100%;
+  background-color: #f0ece2;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.app-container h1, .app-container p, .app-container h3 {
+  color: #596e79;
+}
+
+.drop-zones-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.analyze-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #596e79;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.analyze-btn:hover {
+  background-color: #4A5C66;
+}
+
+.analyze-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: #ff000020;
+}
+
+.results-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+pre.results-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  background-color: #f9f9f9;
+  color: #333;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

@@ -1,13 +1,26 @@
 package com.example.NotesBuff.Notes;
 
+import jakarta.persistence.*;
 import java.time.Instant;
 
+@Entity
+@Table(name = "notes")
 public class Note {
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
+
     private String title;
     private String contentType;
+
+    @Column(columnDefinition = "TEXT")
     private String extractedText;
+
+    @Enumerated(EnumType.STRING)
     private NoteStatus status;
+
+    private byte[] data;
+
     private Instant createdAt;
 
     // Getters and Setters
@@ -57,6 +70,14 @@ public class Note {
 
     public void setExtractedText(String extractedText) {
         this.extractedText = extractedText;
+    }
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
     }
 
 
